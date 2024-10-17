@@ -1,14 +1,13 @@
 *{
    box-sizing: border-box; 
    font-family: "Comfortaa", sans-serif;
+   margin: 0;
 }
 .search_button{
     display: flex;
-    /* gap: 0; */
     background-color:#FFCCFD ;
 }
 .input_search {
-    /* background-color:#FFCCFD ; */
     margin-right: 0;
     border-radius: 10px 0  0 10px;
     border: none;
@@ -138,9 +137,9 @@ input[type=text] {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
   }
   .movie-card {
-    /* height:250px ; */
     display: flex;
     flex-direction: column;
     gap:16px ;
@@ -157,33 +156,54 @@ input[type=text] {
    padding: 10px 0;
   }
 .categories-section{
-    height: 400px;
-    align-items: center;
+    /* height: 400px; */
+    /* align-items: center; */
     margin-top: 40px;
-    background-color: #FDFDFD;
+    background-color:  #3300310c;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 70px;
+
+}
+
+.movies-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.movies-imgs img{
+  height: auto;
+  width: 280px;
 }
 .lined-ul {
     width: 55%;
-    /* margin-left: auto; */
-    margin-left: 20%;
-    padding-left: 70px;
 }
 .lined-ul::after {
     content: '';
     width: 100%;
-    height: 2px;
-    background-color: rgb(65, 62, 62); 
+    height: 1px;
+    background-color: rgb(74, 73, 73); 
     display: block;
 }
 .lined-ul ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
-    margin: 0%;
-    padding: 8px;
-    width: 90%;
+    flex-wrap: wrap;
+    padding: 3px;
 }
+.lined-ul a{
+    text-decoration: none;
+    color: #3d383d;
+    border-bottom: #330031;
+}
+.lined-ul a:hover{
+    border-bottom: #933C24 solid 3px;
+}
+
 .card-puying{
     display: flex;
     flex-direction: column;
@@ -219,11 +239,11 @@ input[type=text] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: 32px 0;
 }
 .services-section {
     background-color: #3300310c;
-    padding: 20px 40px 60px 90px;
+    padding: 32px 40px 60px 90px;
 }
 .services-section h2 {
    letter-spacing: .1em;
