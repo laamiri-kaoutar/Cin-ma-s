@@ -63,7 +63,7 @@
     border-radius: 20px 20px 200px 20px;
     margin-left: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .content{
     width: 50%;
@@ -75,6 +75,9 @@
   .photo{
     width: 40%;
     height: auto;align-self: center;
+  }
+  .photo img{
+    width: 100%;
   }
   .content p{
     color: white;
