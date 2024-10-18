@@ -53,6 +53,10 @@
     gap: 40px;
     padding: 0%;
   }
+  .header a{
+    text-decoration: none;
+    color: black;
+  }
   .slider-section {
     height: 600px;
     background: linear-gradient(to bottom right, #CA26FF 40%, #F4CAC0 76%, #FFF3B0 );
@@ -314,18 +318,33 @@ footer {
   padding: 30px 0;
 }
 .poster{
+  position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0 20px 0 20px;
+  box-shadow: -13px 11px 15px rgba(0, 0, 0, 0.3);
 
+}
+.poster-image{
+  border: #4a0248bb solid 4px;
+  border-bottom: none;
+  border-top-right-radius: 20px;
+}
+.poster-button {
+  position: absolute;
+  left: 55px;
+  top: 190px;
+  border: #4a0248bb solid 4px;
+  border-radius: 20px;
+  color: #4a0248bb;
+  padding: 4px 15px;
+  font-weight: bolder;
+  background-color: #33003100;
 }
 .poster img{
   height: 230px;
   width: auto;
-  border: #4a0248bb solid 4px;
-  border-bottom: none;
-  border-top-right-radius: 20px;
-  margin-bottom: 0;
+  border-top-right-radius: 19.99px;
 }
 .description {
   text-align: center;
