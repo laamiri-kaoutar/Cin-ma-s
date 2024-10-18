@@ -12,7 +12,7 @@
     border-radius:  0 10px 10px 0 ;
     border: none; 
 }
-input[type=text] {
+.nav input[type=text] {
     width: 220px;
     box-sizing: border-box;
     border: none;
@@ -26,7 +26,8 @@ input[type=text] {
     padding: 8px 40px 8px 15px;
     margin-right: 100px;
   }
-  input[type="text"]::placeholder {
+  
+  .nav input[type="text"]::placeholder {
     color: white;
   }
   .logo{
@@ -251,7 +252,6 @@ footer {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  /* padding: 0 22px; */
 }
 .footer-card .sponsors  {
   height: 300px;
@@ -268,17 +268,17 @@ footer {
   list-style-type: none;
   font-size: small;
   padding: 0 ;
-
 }
 .footer-card li  {
   margin-top: 50px;
- margin-bottom: 50px;
-
+  margin-bottom: 50px;
 }
 
-.footer-card span {
- margin-bottom: 30px;
+.footer-card .media-name {
+ /* margin-bottom: 30px; */
+ margin: 0 0 10px 0;
  font-weight: bold;
+ list-style-type: circle ;
 }
 .fa-brands {
   font-size: 24px; 
@@ -431,7 +431,37 @@ footer {
   background-color: rgba(153, 0, 148, 1);
 }
 /*-----------------------------------------*/
-
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  gap: 60px;
+  background-color: rgba(242, 233, 242, 1);
+}
+.contact-card input[type=text] ,.contact-card textarea {
+  border: solid 2px rgba(51, 0, 49, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  color:rgba(51, 0, 49, 0.6) ;
+  background-color:rgb(255, 255, 255) ;
+  width: 470px;
+  padding: 15px;
+}
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-card button{
+  align-self: flex-end;
+  background-color: rgba(208, 138, 206, 1);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: medium;
+}
 
 
    
